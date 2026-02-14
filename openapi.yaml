@@ -1,32 +1,36 @@
 openapi: 3.0.4
 info:
   title: Open Source Licenses
-  description: Open Source Licenses is a simple tool for getting information on open source licenses. It returns information on various open source licenses.
+  description: >-
+    Open Source Licenses is a simple tool for getting information on open source
+    licenses. It returns information on various open source licenses.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/openlicenses:
     get:
       summary: Get Open Source Licenses Information
-      description: Open Source Licenses is a simple tool for getting information on open source licenses. It returns information on various open source licenses.
+      description: >-
+        Open Source Licenses is a simple tool for getting information on open
+        source licenses. It returns information on various open source licenses.
       operationId: openlicenses
       parameters:
-      - name: name
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The name of the open source license to get information about
-        example: MIT
+        - name: name
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The name of the open source license to get information about
+          example: MIT
       responses:
         '200':
           description: Successful Response
@@ -42,17 +46,17 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   domain_content: false
                   domain_data: false
                   domain_software: true
                   legacy_ids:
-                  - mit-license
+                    - mit-license
                   license: MIT
                   name: MIT License
                   license_url: https://opensource.org/licenses/MIT
@@ -62,7 +66,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -70,4 +74,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
