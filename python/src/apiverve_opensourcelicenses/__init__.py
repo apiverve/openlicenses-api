@@ -1,1 +1,3 @@
-from .apiClient import OpenlicensesAPIClient
+from .apiClient import OpenlicensesAPIClient, OpenlicensesAPIClientError
+
+__all__ = ['OpenlicensesAPIClient', 'OpenlicensesAPIClientError']
