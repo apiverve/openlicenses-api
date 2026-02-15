@@ -12,7 +12,6 @@ namespace APIVerve.API.OpenSourceLicenses
     {
         /// <summary>
         /// The name of the open source license to get information about
-        /// Example: MIT
         /// </summary>
         [JsonProperty("name")]
         public string Name { get; set; }
