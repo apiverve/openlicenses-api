@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/openlicenses",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Open Source Licenses is a simple tool for getting information on open source licenses. It returns information on various open source licenses.",
   "main": "index.js",
   "types": "index.d.ts",
