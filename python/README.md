@@ -225,8 +225,9 @@ from apiverve_opensourcelicenses.apiClient import OpenlicensesAPIClient
 
 api = OpenlicensesAPIClient("[YOUR_API_KEY]")
 
+query = { "name": "MIT" }
+
 try:
-    query = { "name": "MIT" }
     result = api.execute(query)
     print(result)
 finally:
