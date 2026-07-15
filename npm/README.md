@@ -131,7 +131,11 @@ async function makeRequest() {
     "license": "MIT",
     "name": "MIT License",
     "license_url": "https://opensource.org/licenses/MIT",
-    "license_status": "active"
+    "license_status": "active",
+    "isOsiApproved": true,
+    "compatibleDomains": [
+      "software"
+    ]
   }
 }
 ```
