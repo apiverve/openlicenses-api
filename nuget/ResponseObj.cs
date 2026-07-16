@@ -25,18 +25,21 @@ namespace APIVerve.API.OpenSourceLicenses
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("domain_content")]
-        public bool DomainContent { get; set; }
+        public bool? DomainContent { get; set; }
 
         [JsonProperty("domain_data")]
-        public bool DomainData { get; set; }
+        public bool? DomainData { get; set; }
 
         [JsonProperty("domain_software")]
-        public bool DomainSoftware { get; set; }
+        public bool? DomainSoftware { get; set; }
 
         [JsonProperty("legacy_ids")]
         public string[] LegacyIds { get; set; }
@@ -52,5 +55,23 @@ namespace APIVerve.API.OpenSourceLicenses
 
         [JsonProperty("license_status")]
         public string LicenseStatus { get; set; }
+
+        [JsonProperty("isOsiApproved")]
+        public bool? IsOsiApproved { get; set; }
+
+        [JsonProperty("compatibleDomains")]
+        public string[] CompatibleDomains { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
