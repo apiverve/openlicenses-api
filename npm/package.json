@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/openlicenses",
-  "version": "1.2.0",
-  "description": "Open Source Licenses is a simple tool for getting information on open source licenses. It returns information on various open source licenses.",
+  "version": "1.2.2",
+  "description": "Open Source Licenses is a software license API that looks up open source license details by name or identifier. It returns SPDX identifiers, canonical URLs, OSI approval status, legacy IDs, and domain applicability for software, content, or data.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "open source licenses", "open source licenses api", "open source licenses tool", "open source licenses software", "open source licenses service"
+    "software license api", "open source license api", "software licensing api", "spdx license lookup", "osi approved license check"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/openlicenses-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/openlicenses?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/openlicenses?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
