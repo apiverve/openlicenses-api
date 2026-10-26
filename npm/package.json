@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/openlicenses",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Open Source Licenses is a software license API that looks up open source license details by name or identifier. It returns SPDX identifiers, canonical URLs, OSI approval status, legacy IDs, and domain applicability for software, content, or data.",
   "main": "index.js",
   "types": "index.d.ts",
